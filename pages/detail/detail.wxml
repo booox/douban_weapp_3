@@ -1,32 +1,39 @@
-<view wx:if="{{bookData}}">
-    <view class="cover-container">
-        <image src="{{bookData.image}}"></image>
-    </view>
+<view>
+  <view class="cover-container">
+    <image src="images/book.png"></image>
+  </view>
 
-    <view class="book-meta">
-        <view class="meta-info">
-            <text class="book-title">{{bookData.title}}</text>
-            <text class="other-meta">作者：<block wx:for="{{bookData.author}}" wx:for-item="it" wx:key="*this">{{it}} </block></text>
-            <text class="other-meta">出版社：{{bookData.publisher}}</text>
-            <text class="other-meta">出版日期：{{bookData.pubdate}}</text>
-        </view>
-        <view class="range">
-            <text class="score">{{bookData.rating.average}}</text>
-            <text class="viewers">{{bookData.rating.numRaters ? bookData.rating.numRaters : 0}}参与</text>
-        </view>
+  <view class="book-meta">
+    <view class="meta-info">
+      <text class="book-title">图书标题</text>
+      <text class="other-meta">作者：作者名称</text>
+      <text class="other-meta">出版社：xxx 出版社</text>
+      <text class="other-meta">出版日期：2010-05-07</text>
     </view>
+    <view class="range">
+      <text class="score">0</text>
+      <text class="viewers">0</text>
+    </view>
+  </view>
 
-    <view class="book-intro" wx:if="{{bookData.summary}}">
-        <view class="intro-header"><text>简介</text></view>
-        <text class="intro-content">{{bookData.summary}}</text>
-    </view>
+  <view class="book-intro">
+    <view class="intro-header"><text>作者</text></view>
+    <text class="intro-content">
+      作者简介
+    </text>
+  </view>
 
-    <view class="book-intro" wx:if="{{bookData.author_intro}}">
-        <view class="intro-header"><text>作者</text></view>
-        <text class="intro-content">{{bookData.author_intro}}</text>
+  <view class="book-info">
+    <view class="intro-header">
+      <text>简介</text>
     </view>
+    <text class="intro-content">
+      图书简介
+    </text>
+  </view>
+
 </view>
 
-<loading hidden="{{loadidngHidden}}">
-    加载中...
+<loading>
+  加载中...
 </loading>

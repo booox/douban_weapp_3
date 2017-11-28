@@ -1,12 +1,12 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/detail/detail"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#42BD56",
-    "navigationBarTitleText": "DouBan Book",
-    "navigationBarTextStyle":"white"
+    "navigationBarTitleText": "Douban Book",
+    "navigationBarTextStyle": "white"
   }
 }

@@ -14,9 +14,8 @@ const formatNumber = n => {
   return n[1] ? n : '0' + n
 }
 
-
 function isFunction( obj ) {
-  return typeof obj === 'function';
+  return typeof obj == 'function';
 }
 
 module.exports = {
